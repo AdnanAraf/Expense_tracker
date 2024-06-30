@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+
+<div>
+    <div class="flex flex-col gap-4 mt-[5%]">
+        <h1 class="text-center text-3xl font-medium">Expense tracker</h1>
+    <!-- Income -->
+    <div class="flex gap-3 justify-center">
+
+        <div class="border-l-[2px] bg-gray-100 border-green-600 h-40 w-full max-w-sm rounded-lg p-4 overflow-auto">
+            <h1 class="text-center text-3xl ">Income</h1>
+<div class="flex  justify-between mt-4">
+    <p>Name</p>
+<p class="-ml-10">Amount</p>
+<p></p>
+</div>
+            <div class="showIncome">
+                
+            </div>
+        </div>
+    
+            <div class="border-l-[2px] bg-gray-100 border-red-600  h-40 w-full max-w-sm rounded-lg p-4 overflow-auto">
+            <h1 class="text-center text-3xl ">Expense</h1>
+            <div class="flex justify-between mt-4">
+                <p>Name</p>
+            <p class="-ml-10">Amount</p>
+            <p></p>
+            </div>
+            <div class="showExpense">
+
+            </div>
+        </div>   
+        
+
+        <div class="border-l-[2px] bg-gray-100 border-gray-600  h-40 w-full max-w-sm rounded-lg p-4">
+            <h1 class="text-center text-3xl ">Total sum</h1>
+            <div class="totalSum">
+
+            </div>
+        </div>  
+    </div>
+    </div>
+
+
+
+
+
+    <div class="mt-[5%] flex flex-col gap-10">
+
+    <div class="flex flex-col items-center">
+        <h1 class="font-semibold text-lg">Text</h1>
+        <input class="border-[2px] rounded-lg w-full max-w-sm py-2 outline-none " type="text" id="text" >
+    </div>
+
+
+
+
+
+
+
+      <div class="flex justify-center gap-3">
+        <div class="flex flex-col gap-2 w-full max-w-sm ">
+            <h1 class="font-semibold text-lg">Income</h1>
+            <input class="border-[2px] rounded-lg py-2 outline-none" type="number" id="income" min="0" >
+            <button id="income-button" class="bg-green-600 font-medium text-black w-max m-auto py-[6px] px-3 rounded-lg">Income Button</button>
+        </div>
+
+        <div class="flex flex-col gap-2 w-full max-w-sm ">
+            <h1 class="font-semibold text-lg">Expense</h1>
+            <input class="border-[2px] rounded-lg py-2 outline-none" type="number" id="expense" min="0" >
+            <button id="expense-button" class="bg-red-600 font-medium text-black w-max m-auto py-[6px] px-3 rounded-lg">Expense Button</button>
+        </div>
+      </div>
+      
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
